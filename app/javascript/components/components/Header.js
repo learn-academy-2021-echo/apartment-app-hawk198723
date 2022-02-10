@@ -35,6 +35,7 @@ class Header extends Component {
             </li>
           )}
         </ul>
+        <h2>Closed Header</h2>
       </nav>
     );
   }

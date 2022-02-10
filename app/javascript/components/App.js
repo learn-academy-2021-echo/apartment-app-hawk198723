@@ -3,10 +3,6 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import ApartmentIndex from './pages/ApartmentIndex';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Nav, NavItem } from 'reactstrap';
-import AboutUs from './pages/AboutUs';
-import LearnMore from './pages/LearnMore';
-import { NavLink } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -16,22 +12,7 @@ class App extends Component {
         <Router>
           <Header {...this.props}/>
           <h1>This is HomePage</h1>
-          <Nav>
-            <NavItem>
-              <NavLink to="/home">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/about">About Us</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/learn">Learn More</NavLink>
-            </NavItem>
-          </Nav>
-          <Switch>
-            <Route exact path="/home" component={Home} />
-            <Route path="/about" component={AboutUs} />
-            <Route path="/learn" component={LearnMore} />
-          </Switch>
+          
         </Router>
             <Home/>
             <ApartmentIndex />
@@ -49,5 +30,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
