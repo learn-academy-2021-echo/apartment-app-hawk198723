@@ -19,7 +19,6 @@ class Header extends Component {
 					<li>
 						<NavLink to="/apartmentsindex">Apartments</NavLink>
 					</li>
-
 					{!logged_in && (
 						<li>
 							<a href={new_user_route}>Register</a>
